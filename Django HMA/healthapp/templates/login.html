@@ -1,0 +1,162 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In</title>
+<link rel="stylesheet" href="{% static 'CSS/login.css' %}">
+
+<link rel="shortcut icon" href="{% static "./images/footer-logo_400x_43a46162-c9d5-4778-ad35-efdf5ddffcd3.avif" %}" type="image/x-icon">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+</head>
+<body>
+    
+        
+
+
+
+    <div class="container-fluid my-3">
+        <h2 class="head">ALREADY REGISTERED?</h2>
+
+        <div class="container-flex mx-4">
+            <div class="login w-100 border p-5">
+                <h5 class="pb-3">LOGIN</h5>
+
+                <div class="inputGroup">
+                    <input type="email" required="" autocomplete="off">
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputGroup">
+                    <input type="password" required="" autocomplete="off">
+                    <label for="password">Password</label>
+                </div>
+
+                <div class="pb-4">
+                    <a href="#" class="text-secondary"><u>Forgot your password?</u></a>
+                </div>
+
+                <div class="signcreate">
+                    <a href="./dashboard.html">
+                        <button class="btn rounded-0 px-5 py-2">Log in</button>
+                    </a>
+                    <a href="{% url "signup" %}" class="text-secondary">
+                       <u> Register</u>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="New-customer w-100 border p-5">
+                <h5 class="pb-3">New to this platform?</h5>
+                <p class="">
+                    By creating an account with Health App, you will be able to 
+                    access our services faster, get an insurance, book surgeries, and emergency services with the click of a button.
+                </p>
+
+                <div class="">
+                    <a href="{% url "signup" %}">
+                        <button class="btn border border-2 rounded-0 px-4 py-2 border-secondary">Register here</button>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ======= Footer ======= -->
+  
+<!-- My footer starts here -->
+<div class="footer_app">
+  <div class="row w-100">
+  <div class="col-lg-3 col-md-3 col-sm-6">
+    <h5>Health App</h5>
+    <a href="#">About</a> 
+    <a href="#">What We Offer</a> 
+    <a href="#">Leadership</a> 
+    <a href="#">Careers</a> 
+    <a href="#">Categories</a> 
+    <a href="#">Health Plus</a> 
+    <a href="#">Professional Certificates</a> 
+    <a href="#">Health Blog</a> 
+    <a href="#">Insurance</a> 
+    <a href="#">For Individual</a> 
+    <a href="#">For Government</a>
+    <a href="#">For Community</a> 
+    <a href="#">Become a Partner</a> 
+    <a href="#">Coronavirus Response</a> 
+    <a href="#">Emergency</a> 
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6"><h5>Categories</h5>
+    <a href="#">HMO</a>
+    <a href="#">Insurance</a>
+    <a href="#">Surgical</a>
+    <a href="#">Disability Support
+    <a href="#">Medical supplies</a>
+    <a href="#">Hospital equipping</a>
+    <a href="#">Medical care type</a>
+    <a href="#">Dental</a>
+    <a href="#">Optometry</a>
+    <a href="#">paediatrics</a>
+    <a href="#">Obstetrics & Gynocology</a>
+    <a href="#">Physican</a>
+    <a href="#">Emergency Services</a>
+    <a href="#">Blog</a>
+    <a href="#">Online services</a>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6">
+    <h5>More</h5>
+    <a href="#">Press</a>
+    <a href="#">Investors</a>
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+    <a href="#">Help</a>
+    <a href="#">Accessibility</a>
+    <a href="#">Contact</a>
+    <a href="#">Articles</a>
+    <a href="#">Directory</a>
+    <a href="#">Affiliates</a>
+    <a href="#">Modern Slavery Statement</a>
+    <a href="#">Manage Cookie Preferences</a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6  mobile_app">
+    <h5>Mobile App</h5>
+    <a href="#"><img src="{% static '/images/apple_store.png' %}" alt="Apple store"></a>
+    <a href="#"><img src="{% static '/images/B certifited.png' %}" alt="Google store"></a>
+    <a href="#" class="b_cert"><img src="{% static '/images/google_store.png' %}" alt="B Cretified"></a>
+  </div>
+</div>
+</div>
+<!-- Copyright and socials -->
+<div class="soci-ials">
+  <div class="row">
+  
+      <div class="col-lg-6 col-md-6 col-sm-12 ">
+        <div class="copy_right">
+  <span>&copy; Health App Inc. All rights reserved</span></div></div>
+  <div class="col-lg-6 col-md-6 col-sm-12 ">
+  <div class="social_media so-cia">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-linkedin"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-youtube"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+  </div>
+</div>
+</div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>

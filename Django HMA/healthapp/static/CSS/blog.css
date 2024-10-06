@@ -1,0 +1,178 @@
+/* Navbar starts here */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.row{
+  padding: 30px;
+}
+
+/* Register page */
+.register{
+  padding: 30px;
+  background-color: bisque;
+  font-size: larger;
+  line-height: 40px;
+}
+
+.card-body{
+  margin: auto;
+  border: 2px solid;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 50px;
+ 
+}
+.btn button{
+  border: none;
+  background-color: navy;
+  padding: 10px 15px;
+  
+}
+.btn a{
+   text-decoration: none;
+   color: white
+
+}
+
+input{
+  padding: 6px 10px;
+  border: 2px solid rgb(206, 173, 133);
+}
+
+.submit{
+  padding: 10px;
+  border-radius: 5px;
+
+}
+/* Navbar ends here */
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+/* FOOTER DESIGNS STARTS HERE */
+/* Footer design starts here */
+.footer_app{
+  /* background-color: rgb(236, 234, 234); */
+  
+  background-color: rgba(5, 5, 66, 0.877) !important;
+  color: white !important;
+}
+.footer_app a{
+  color: white !important;
+}
+.top-footer a{
+  display: block;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 13px;
+  padding: 5px;
+ 
+}
+
+.top-footer h5{
+  padding-bottom: 15px;
+}
+.top-footer{
+  display: flex;
+  padding-left: 4rem !important;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+ 
+}
+.top-footer a:hover{
+  text-decoration: underline;
+}
+
+.footer_app a{
+  display: block;
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+  font-weight: normal;
+  font-size: 14px;
+ 
+}
+.footer_app{
+  display: flex;
+  padding: 20px 0px;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid lightgray;
+}
+.footer_app h5{
+  padding-bottom: 15px;
+ 
+}
+.footer_app a:hover{
+  text-decoration: underline;
+}
+.mobile_app img{
+  width: 10rem;
+  height: 3rem;
+  margin-top: 12px;
+  
+}
+.b_cert img{
+  width: 8rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
+
+/* Copyright and socials */
+.list-inline-item{
+  font-size: 30px;
+}
+.widget{
+  margin-top: -3rem;
+}
+.soci-ials{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid lightgray;
+  position: relative;
+}
+.copy_right span{
+  padding-left: 3rem;
+}
+.copy_right{
+  position: absolute;
+}
+.social_media a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding: 0px 10px; 
+}
+
+.so-cia {
+ position: absolute;
+ right: 3rem;
+}
+.link-foot{
+  font-size: 12px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+
+}
+.link-foot h6{
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+.link-foot p{
+  margin-top: -1rem; 
+}
+
+.link-foot a{
+  padding-left: 10px;
+  color: black;
+}
+

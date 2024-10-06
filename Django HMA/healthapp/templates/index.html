@@ -1,0 +1,524 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="shortcut icon" type="image/x-icon" href="{% static "images/logo_for_healthapp-removebg-preview.png" %}" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{% static "css/hma.css" %}">
+</head>
+<body>
+    <!-- Navigation starts here -->
+  <div class="container text-bg-dark mt-2">
+
+    <ul class="nav justify-content-center">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "individually" %}">Individual</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "individually" %}">Government</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "individually" %}">NGO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "individually" %}">Community</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url "individually" %}">Hospital</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main navbar -->
+
+  <nav class="navbar navbar-expand-lg bg-light navbar-scroll mt-3 ">
+    <div class="container-fluid border 5px primary" >
+      <a class="navbar-brand" href="./index.html">
+        <img src="{% static "images/logo_for_healthapp-removebg-preview.png" %}" alt="Logo here" width="80px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link explore btn btn-outline-primary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+              Explore
+              </a>
+              
+  
+           
+            <ul class="dropdown-menu" style="width: 300px;">
+
+              <li><a class="dropdown-item" href="./dashboard.html">Dashboard</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="offcanvas" href="#" role="button" aria-controls="" href="./HMO.html">HMO</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Insurance</a></li>
+              <li><a class="dropdown-item" href="#">Surgical</a></li>
+              <li><a class="dropdown-item" href="#">Disability support</a></li>
+              <li><a class="dropdown-item" href="#">Medical supplies</a></li>
+              <li><a class="dropdown-item" href="#">Hospital Equipping</a></li>
+              <li><a class="dropdown-item" href="#">Medical care type</a>
+            
+                  <li><a class="dropdown-item" href="#">dental</a></li>
+                  <li><a class="dropdown-item" href="#">optometry</a></li>
+                  <li><a class="dropdown-item" href="#">Obstetrics and gynocology</a></li>
+                  <li><a class="dropdown-item" href="#">Cardio</a></li>
+                  <li><a class="dropdown-item" href="#">General physican</a></li>
+                  <li><a class="dropdown-item" href="#">Emergency services</a></li>
+                  <li><a class="dropdown-item" href="#">Online services</a></li>
+                  <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
+                </ul>
+              </li>
+<!-- About, contact and login -->
+          <div class="about d-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+              </li> 
+          </div>
+          <div class="search ">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Type anything here" aria-label="Search">
+              <button class="btn" id="sub" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="log">
+            <div class="btn-log">
+              <button><a href="./login.html">Login</a></button>  
+            </div>
+            <div class="btn-rg">
+              <button><a href="./register.html">Register</a></button>
+          </div>
+        </div>
+      </ul>    
+    </div>
+  </nav>
+<!-- Backgound vid -->
+  <!-- <video autoplay loop muted id="background-video">
+    <source src="{% static './images/background vid.mp4' %}" type="video/mp4">
+  </video> -->
+
+<!-- Mission statement -->
+  <section class="vision">
+  
+    <div class="container-vi">
+      <div class="row justify-content-center">
+        <div class="card col-md-12 col-lg-10">
+          <div class="card-wrapper">
+            <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
+              <strong> Our Vision</strong>
+            </h3>
+            <div class="row card-box align-left">
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                  
+                  <p class="mbr-text mbr-fonts-style display-7">Welcome to the future of healthcare management! At Health App, we are on a mission to revolutionize the way healthcare services are accessed and managed.</p>
+                </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                  
+                  <p class="mbr-text mbr-fonts-style display-7">Our platform serves as a bridge connecting individuals, government bodies, organizations, and NGOs to a seamless healthcare experience.</p>
+                </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                  
+                  <p class="mbr-text mbr-fonts-style display-7">Join us in shaping a healthier world where medical information is easily accessible, and connecting with healthcare professionals is just a click away.</p>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- body starts here -->
+
+  
+  <div class="strengthen-employ">
+    <div class="attract d-flex">
+    <div class="row w-100">
+      <div class="col-lg-6 col-sm-12 col-md-6   text-employ">
+        <h1>Make <br> health your priority<br> explore options<br>with us</h1>
+        <p>You can all forms of health and health care systems <br> the process is made simple by a click.</p>
+        <button class="btn text-bg-primary ">Contact us<a href="#"></a></button>
+        <p>Who are you?, <a href="#">check your category <span><i class="bi bi-box-arrow-up-right"></i></span></a></p>
+      </div>
+      <div class="col-lg-6 col-sm-12 col-md-6 perns">
+        <img class="backgr-img" src="{% static './images/about us/Booking temp.jpg' %}" alt="">
+      </div>
+    </div>
+  </div>
+
+    
+<!-- Partnerships and strides -->
+<div class="uni-college d-flex">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="offer-courses">
+    <h1><blockquote>We got you <br> with 200+ leading <br>healthcare and pharmaceutical industries <br> partners</blockquote></h1>
+  </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="uc-colle">
+    <img src="{% static './images/Equipment.jpg' %}" alt="">
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="prepare-std d-flex">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="offerring">
+    <img src="{% static './images/R&D.jpg' %}" alt="">
+  </div>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="student-offer">
+   <h2>Health Academy</h2>
+
+     <h1> Prepare your staff for <br>world class best practices</h1>
+     <p> Strengthen staff output with up-to-date skills training from the <br>world's leading health providers. <br><br>
+      
+      With our Health Academy, enable your employees to: <br> <br>
+      
+      <span><i class="bi bi-check2"></i></span>Earn a Professional Certificate designed to enhance performance <br> 
+      <span><i class="bi bi-check2"></i></span>Gain common job skills suitable to scale up in their carreer <br> 
+      <span><i class="bi bi-check2"></i></span>Showcase skill mastery with access to mentorship and professional support <br> 
+      <span><i class="bi bi-check2"></i></span>Explore healthcare best practices across the industry</p> 
+      <br> <br>
+      <a href="#">Learn more about Health Academy <i class="bi bi-arrow-right"></i></a>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="prof-cert d-flex">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="learn_ing">
+  <h3>PROFESSIONAL CERTIFICATES</h3>
+  <h1>Learn why employees and <br>employers value <br> Professional Certificates</h1>
+  <p>A survey of 3,000 helath professinals and employers in 30 countries finds that <br>the majority value Professional Certificates for driving career growth <br> outcomes. Professional Certificates help  demonstrate to <br>employers that you are qualified and job-ready.
+    <br> <br>
+
+    Use these insights to enhance your curriculum, and strengthen <br>career outcomes.</p>
+    <a href="./blog.html"> Learn more <span><i class="bi bi-arrow-right"></i></span></a>
+  </div>
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12">
+  <div class="cert_video">
+    <video width="550" height="400" style="border: 2px solid rgb(169, 169, 185)" controls>
+      <source src="{% static './images/Health vid.mp4' %}" type="video/mp4">
+    </video> 
+  </div>
+  </div>
+
+</div>
+</div>
+
+
+ <!-- All Health Advert Starts -->
+ <div
+ id="carouselExampleControls"
+ class="carousel-slide"
+ data-bs-ride="carousel"
+>
+ <div class="carousel-inner">
+   <div
+     class="carousel-item active"
+     data-bs-interval="2000 position-relative"
+   >
+     <img
+       src="{% static './images/health signal_files/ai-generated-8607702_640.webp' %}"
+       height="800"
+       class="d-block w-100"
+       alt="health img"
+       style="object-fit: cover"
+     />
+     <a
+       href="./login.html"
+       class="btn btn-warning rounded-0 px-5 py-3 position-absolute btn-1"
+       >CHECK OUT</a
+     >
+   </div>
+   <div class="carousel-item" data-bs-interval="2000">
+     <img
+       src="{% static './images/health signal_files/capsules-1079838_640.jpg' %}"
+       height="800"
+       class="d-block w-100"
+       alt="drugs"
+       style="object-fit: cover"
+     />
+     <a
+       href="./login.html"
+       class="btn btn-warning rounded-0 px-5 py-3 position-absolute btn-1"
+       >CHECK OUT</a
+     >
+   </div>
+
+   <div
+     class="carousel-item active"
+     data-bs-interval="2000 position-relative"
+   >
+     <img
+       src="{% static './images/health signal_files/ai-generated-8700020_640.webp' %}"
+       height="800"
+       class="d-block w-100"
+       alt="Patient and Doctor"
+       style="object-fit: cover"
+     />
+     <a
+       href="./login.html"
+       class=" btn btn-warning rounded-0 px-5 py-3 position-absolute btn-1"
+       >CHECK OUT</a
+     >
+   </div>
+
+   <div
+     class="carousel-item active"
+     data-bs-interval="2000 position-relative"
+   >
+     <img
+       src="{% static './images/health signal_files/autistic-8734646_640.webp' %}"
+       height="800"
+       class="d-block w-100"
+       alt="Autistic"
+       style="object-fit: cover"
+     />
+     <a
+       href="./login.html"
+       class="btn btn-warning rounded-0 px-5 py-3 position-absolute btn-1"
+       >SHOP NOW</a
+     >
+   </div>
+ </div>
+</div>
+<!-- All Health  Advert Ends -->
+
+
+<!-- Get in touch with the sales team -->
+<div class="contact_sales">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 touch">
+      <h1>Get in touch with our sales <br>team</h1>
+      <p>
+        Learn more about how you can: <br>
+
+        <span><i class="bi bi-check-lg"></i></span>Connect your hospital to our database <br>
+        <span><i class="bi bi-check-lg"></i></span>Optimize your capacity and patients satisfaction <br>
+        <span><i class="bi bi-check-lg"></i></span>Enhance user experience and employees output
+      </p>
+      <h3>Join the innovative Health Management App with global reach, one stop point for all things health</h3>
+
+      <div class="col-6 unis">
+        <img src="{% static './images/health signal_files/blood-pressure-3312513_640.webp' %}" alt="health photo">
+      </div>
+        
+        
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+      <div class="form-sales">
+      <div class="row form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last Name or Organization" aria-label="Last name">
+        </div>
+      </div>
+
+      <div class="row form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Work Email Address" aria-label="Address">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Phone Number" aria-label="tel">
+        </div>
+      </div>
+
+      <div class="row form-row ">
+        <div class="col">
+          <select class="form-select" name="Institution Type" id="">
+            <option value=""></option>Inquiry type
+            <option value="">Government & MDAs</option>
+            <option value="">Private organizations</option>
+            <option value="">Community</option>
+            <option value="">NGOs</option>
+            <option value="">individuals</option>
+            <option value="">Others</option>
+          </select>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Institution Name" aria-label="Insti name">
+        </div>
+      </div>
+
+      <div class="row form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Job Role" aria-label="Address">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Department" aria-label="tel">
+        </div>
+      </div>
+
+      <div class="needs">
+        <select class="form-select" name="needs description" id="">
+          <option value="">Which best describes your needs?</option>
+          <option value="">Select</option>
+          <option value="">Meet with Health App Sales Team</option>
+          <option value="">Hospital Support</option>
+          <option value="">Billing/Invoice Support</option>
+          <option value="">Existing Customer Support</option>
+          <option value="">Equipment Support</option>
+          <option value="">Doctor's support</option>
+          <option value="">Other</option>
+
+        </select>
+      </div>
+
+      <div class="state mt-3 ">
+        <select class="form-select" name="country" id="">
+          <option value="">State</option>
+          <option value="">Lagos</option>
+          <option value="">Rivers</option>
+          <option value="">FCT</option>
+          <option value="">Ogun</option>
+          <option value="">Niger</option>
+          <option value="">Abia</option>
+          <option value="">Uyo</option>
+        </select>
+      </div>
+
+      <p>By submitting your info in the form above, you agree to our <a href="#">Terms of Use</a> and <br> <a href="#">Privacy Notice</a>. We may use this info to contact you and/or use data from <br>third parties to personalize your experience.</p>
+
+      <div class="sub-mit">
+        <button class="btn bg-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<!-- Choose hospital -->
+<div class="help_prep">
+  <h1>Get the best of out of our HMO</h1>
+  <p>Widen your options, enhance your care plans, and empower staff and patients with Health App for individuals.</p>
+  <div class="btn_2">
+    <a href="./about.html" class="contact">Contact us</a>
+    <a href="./individual.html" class="plans">Compare plans</a>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- My footer starts here -->
+<div class="footer_app">
+  <div class="row w-100">
+  <div class="col-lg-3 col-md-3 col-sm-6">
+    <h5>Health App</h5>
+    <a href="#">About</a> 
+    <a href="#">What We Offer</a> 
+    <a href="#">Leadership</a> 
+    <a href="#">Careers</a> 
+    <a href="#">Categories</a> 
+    <a href="#">Health Plus</a> 
+    <a href="#">Professional Certificates</a> 
+    <a href="#">Health Blog</a> 
+    <a href="#">Insurance</a> 
+    <a href="#">For Individual</a> 
+    <a href="#">For Government</a>
+    <a href="#">For Community</a> 
+    <a href="#">Become a Partner</a> 
+    <a href="#">Coronavirus Response</a> 
+    <a href="#">Emergency</a> 
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6"><h5>Categories</h5>
+    <a href="#">HMO</a>
+    <a href="#">Insurance</a>
+    <a href="#">Surgical</a>
+    <a href="#">Disability Support
+    <a href="#">Medical supplies</a>
+    <a href="#">Hospital equipping</a>
+    <a href="#">Medical care type</a>
+    <a href="#">Dental</a>
+    <a href="#">Optometry</a>
+    <a href="#">paediatrics</a>
+    <a href="#">Obstetrics & Gynocology</a>
+    <a href="#">Physican</a>
+    <a href="#">Emergency Services</a>
+    <a href="#">Blog</a>
+    <a href="#">Online services</a>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-6">
+    <h5>More</h5>
+    <a href="#">Press</a>
+    <a href="#">Investors</a>
+    <a href="#">Terms</a>
+    <a href="#">Privacy</a>
+    <a href="#">Help</a>
+    <a href="#">Accessibility</a>
+    <a href="#">Contact</a>
+    <a href="#">Articles</a>
+    <a href="#">Directory</a>
+    <a href="#">Affiliates</a>
+    <a href="#">Modern Slavery Statement</a>
+    <a href="#">Manage Cookie Preferences</a>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6  mobile_app">
+    <h5>Mobile App</h5>
+    <a href="#"><img src="{% static './images/apple_store.png' %}" alt="Apple store"></a>
+    <a href="#"><img src="{% static './images/B certifited.png' %}" alt="Google store"></a>
+    <a href="#" class="b_cert"><img src="{% static './images/google_store.png' %}" alt="B Cretified"></a>
+  </div>
+</div>
+</div>
+<!-- Copyright and socials -->
+<div class="soci-ials">
+  <div class="row">
+  
+      <div class="col-lg-6 col-md-6 col-sm-12 ">
+        <div class="copy_right">
+  <span>&copy; Health App Inc. All rights reserved</span></div></div>
+  <div class="col-lg-6 col-md-6 col-sm-12 ">
+  <div class="social_media so-cia">
+    <a href="#"><i class="bi bi-facebook"></i></a>
+    <a href="#"><i class="bi bi-linkedin"></i></a>
+    <a href="#"><i class="bi bi-twitter"></i></a>
+    <a href="#"><i class="bi bi-youtube"></i></a>
+    <a href="#"><i class="bi bi-instagram"></i></a>
+  </div>
+</div>
+</div>
+
+
+
+  
+   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <!-- <script src="{% static 'index.js' %}"></script> -->
+    
+</body>
+</html>

@@ -1,0 +1,327 @@
+.container-flex a{
+  list-style-type: none;
+  text-decoration: none;
+}
+
+
+.container-fluid h2{
+  color: #00205B;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+
+}
+.container-flex a{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.container-fluid h2{
+    color: #00205B;
+    font-weight: bold;
+
+}
+
+.container-flex{
+    display: flex;
+    gap: 1em;
+    margin-top: 6em;
+    
+
+}
+
+.container-flex h5{
+    color: #00205B;
+    font-weight: bold;
+
+}
+
+/* INPUT DESIGN */
+
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 16px;
+    padding: 11px 12px 10px 15px;
+    outline: none;
+    border: none;
+    background-color: #f7f8fa;
+    width: 100%;
+    color: #000;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left:0;
+    top: 5px;
+    padding: 0.4em;
+    margin-left: 0.5em;
+    transition: all 0.2s ease;
+    color: #203250;
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(0.9);
+    margin-left: 0em;
+    padding: 0px 0px;
+    font-size: 12px;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+
+.signcreate{
+    text-align: center;
+    display: grid;
+    gap: 1em;
+}
+
+
+.New-customer button:hover{
+    color: white;
+    background-color: #00205B;
+    
+}
+
+.signcreate button{
+    background-color: #FFD200;
+}
+
+.signcreate button:hover{
+    background-color: #00205B;
+    color: #f7f8fa;
+}
+
+
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 785px) {
+
+    .container-flex{
+        display: block;  
+    
+    }
+    
+    .New-customer{
+        margin-top: 15px;
+    }
+}
+
+
+
+.container-flex{
+  display: flex;
+  gap: 1em;
+  margin-top: 6em;
+  
+
+}
+
+.container-flex h5{
+  color: #00205B;
+  font-weight: bold;
+
+}
+
+/* INPUT DESIGN */
+
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0 1em 0;
+  max-width: 100%;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 16px;
+  padding: 11px 12px 10px 15px;
+  outline: none;
+  border: none;
+  background-color: #f7f8fa;
+  width: 100%;
+  color: #000;
+}
+
+.inputGroup label {
+  font-size: 100%;
+  position: absolute;
+  left:0;
+  top: 5px;
+  padding: 0.4em;
+  margin-left: 0.5em;
+  transition: all 0.2s ease;
+  color: #203250;
+}
+
+.inputGroup :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(0.9);
+  margin-left: 0em;
+  padding: 0px 0px;
+  font-size: 12px;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(150, 150, 200);
+}
+
+
+.signcreate{
+  text-align: center;
+  display: grid;
+  gap: 1em;
+}
+
+
+.New-customer button:hover{
+  color: white;
+  background-color: #00205B;
+  
+}
+
+.signcreate button{
+  background-color: #FFD200;
+}
+
+.signcreate button:hover{
+  background-color: #00205B;
+  color: #f7f8fa;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media screen and (max-width: 785px) {
+
+  .container-flex{
+      display: block;  
+  
+  }
+  
+  .New-customer{
+      margin-top: 15px;
+  }
+}
+
+
+/* FOOTER DESIGNS STARTS HERE */
+/* Footer design starts here */
+.footer_app{
+  /* background-color: rgb(236, 234, 234); */
+  margin-top: 4rem;
+}
+.top-footer a{
+  display: block;
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+  font-weight: normal;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.top-footer h5{
+  padding-bottom: 15px;
+}
+.top-footer{
+  display: flex;
+  padding-left: 4rem !important;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+ 
+}
+.top-footer a:hover{
+  text-decoration: underline;
+}
+
+.footer_app a{
+  display: block;
+  text-decoration: none;
+  color: rgb(14, 13, 13);
+  font-weight: normal;
+  font-size: 14px;
+ 
+}
+.footer_app{
+  display: flex;
+  padding: 20px 0px;
+  padding-left: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid lightgray;
+}
+.footer_app h5{
+  padding-bottom: 15px;
+ 
+}
+.footer_app a:hover{
+  text-decoration: underline;
+}
+.mobile_app img{
+  width: 10rem;
+  height: 3rem;
+  margin-top: 12px;
+  
+}
+.b_cert img{
+  width: 5rem;
+  height: 8rem;
+  margin-left: 3rem;
+}
+
+/* Copyright and socials */
+
+.soci-ials{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  border-top: 1px solid lightgray;
+  position: relative;
+}
+.copy_right span{
+  padding-left: 3rem;
+}
+.copy_right{
+  position: absolute;
+}
+.social_media a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  padding: 0px 10px; 
+}
+
+.so-cia {
+ position: absolute;
+ right: 3rem;
+}
+.link-foot{
+  font-size: 12px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+
+}
+.link-foot h6{
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+}
+.link-foot p{
+  margin-top: -1rem; 
+}
+
+.link-foot a{
+  padding-left: 10px;
+  color: black;
+}
+

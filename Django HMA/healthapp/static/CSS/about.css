@@ -1,0 +1,58 @@
+/* Navbar starts here */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.row{
+  padding: 30px;
+}
+
+/* Register page */
+.register{
+  padding: 30px;
+  background-color: bisque;
+  font-size: larger;
+  line-height: 40px;
+}
+
+.card-body{
+  margin: auto;
+  border: 2px solid;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding-left: 50px;
+ 
+}
+.btn button{
+  border: none;
+  background-color: navy;
+  padding: 10px 15px;
+  
+}
+.btn a{
+   text-decoration: none;
+   color: white
+
+}
+
+input{
+  padding: 6px 10px;
+  border: 2px solid rgb(206, 173, 133);
+}
+
+.submit{
+  padding: 10px;
+  border-radius: 5px;
+
+}
+/* Navbar ends here */
+.bgr-image{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  /* max-width: 100%;
+  max-height: 100%; */
+  background-size: cover;
+  z-index: -1;
+}
